@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compradores Compulsivos Ltda.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#ff0f7b;
+      background-image:
+      radial-gradient(circle at top right, #ff4fa3, transparent 30%),
+      radial-gradient(circle at bottom left, #7b2fff, transparent 25%);
+      color:white;
+      min-height:100vh;
+    }
+
+    header{
+      padding:25px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-family:'Anton', sans-serif;
+      font-size:2rem;
+      line-height:1;
+      text-transform:uppercase;
+      color:#fff;
+      text-shadow:3px 3px 0 #000;
+    }
+
+    .logo span{
+      color:#ffe600;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:white;
+      margin-left:20px;
+      font-weight:600;
+      transition:.3s;
+    }
+
+    nav a:hover{
+      color:#ffe600;
+    }
+
+    .hero{
+      padding:50px 8%;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      align-items:center;
+      gap:40px;
+    }
+
+    .hero-text h1{
+      font-family:'Anton', sans-serif;
+      font-size:5rem;
+      line-height:1;
+      margin-bottom:20px;
+      text-shadow:5px 5px 0 #000;
+    }
+
+    .hero-text h1 span{
+      color:#ffe600;
+    }
+
+    .hero-text p{
+      font-size:1.2rem;
+      margin-bottom:30px;
+      max-width:550px;
+    }
+
+    .search-box{
+      background:white;
+      padding:10px;
+      border-radius:20px;
+      display:flex;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+
+    .search-box input{
+      flex:1;
+      border:none;
+      padding:18px;
+      font-size:1rem;
+      outline:none;
+    }
+
+    .search-box button{
+      border:none;
+      background:#ffe600;
+      color:#000;
+      padding:0 35px;
+      font-weight:700;
+      cursor:pointer;
+      font-size:1rem;
+      transition:.3s;
+    }
+
+    .search-box button:hover{
+      background:#000;
+      color:#ffe600;
+    }
+
+    .hero-image{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .card{
+      width:100%;
+      max-width:500px;
+      background:rgba(255,255,255,.12);
+      backdrop-filter:blur(10px);
+      border:2px solid rgba(255,255,255,.2);
+      border-radius:30px;
+      padding:30px;
+      box-shadow:0 10px 40px rgba(0,0,0,.3);
+    }
+
+    .offer{
+      background:white;
+      color:#000;
+      border-radius:20px;
+      padding:20px;
+      margin-bottom:20px;
+      transition:.3s;
+    }
+
+    .offer:hover{
+      transform:translateY(-5px);
+    }
+
+    .offer h3{
+      margin-bottom:10px;
+      font-size:1.2rem;
+    }
+
+    .price{
+      font-size:2rem;
+      font-weight:700;
+      color:#ff0f7b;
+    }
+
+    .old-price{
+      text-decoration:line-through;
+      opacity:.6;
+      margin-left:10px;
+      font-size:1rem;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:15px;
+      background:#000;
+      color:#fff;
+      padding:12px 20px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:600;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:#ffe600;
+      color:#000;
+    }
+
+    .brands{
+      padding:30px 8% 80px;
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .brand{
+      background:rgba(255,255,255,.15);
+      padding:15px 25px;
+      border-radius:15px;
+      font-weight:700;
+      backdrop-filter:blur(8px);
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:rgba(0,0,0,.2);
+      margin-top:40px;
+    }
+
+    @media(max-width:900px){
+      .hero{
+        grid-template-columns:1fr;
+      }
+
+      .hero-text h1{
+        font-size:3.5rem;
+      }
+
+      nav{
+        display:none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      Compradores <span>Compulsivos</span>
+    </div>
+
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Ofertas</a>
+      <a href="#">Cupons</a>
+      <a href="#">Afiliados</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+
+    <div class="hero-text">
+      <h1>
+        AS MELHORES <span>OFERTAS</span><br>
+        DA INTERNET
+      </h1>
+
+      <p>
+        Busque promoções da Amazon, Mercado Livre, Magalu e várias outras lojas em um só lugar.
+      </p>
+
+      <div class="search-box">
+        <input type="text" placeholder="Buscar produto...">
+        <button>BUSCAR</button>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="card">
+
+        <div class="offer">
+          <h3>iPhone 15</h3>
+
+          <div>
+            <span class="price">R$ 4.299</span>
+            <span class="old-price">R$ 5.499</span>
+          </div>
+
+          <a href="#" class="btn">
+            Ver Oferta
+          </a>
+        </div>
+
+        <div class="offer">
+          <h3>Smart TV 50"</h3>
+
+          <div>
+            <span class="price">R$ 1.899</span>
+            <span class="old-price">R$ 2.799</span>
+          </div>
+
+          <a href="#" class="btn">
+            Ver Oferta
+          </a>
+        </div>
+
+        <div class="offer">
+          <h3>Notebook Gamer</h3>
+
+          <div>
+            <span class="price">R$ 3.999</span>
+            <span class="old-price">R$ 5.200</span>
+          </div>
+
+          <a href="#" class="btn">
+            Ver Oferta
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="brands">
+    <div class="brand">Amazon</div>
+    <div class="brand">Mercado Livre</div>
+    <div class="brand">Magazine Luiza</div>
+    <div class="brand">Shopee</div>
+    <div class="brand">AliExpress</div>
+  </section>
+
+  <footer>
+    © 2026 Compradores Compulsivos Ltda. — Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
